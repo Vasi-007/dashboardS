@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Step 2 - Contact Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+
+    <div class="progress">Step 2 of 4</div>
+
+    <h1>Contact Information</h1>
+
+    <form action="form3.html"  name="RegForm" onsubmit="return validateForm()" onreset="resetErrors()" method="get">
+
+        <input id="address" name="Adresss" type="text" placeholder="Veed evdiya lakshmiyee">
+        <span id="address-error" class="error-message"></span>
+
+        <input id="city" name="City" type="text" placeholder="City evdiya lakshmiye" required>
+        <span id="city-error" class="error-message"></span>
+
+        <input id="state" name="State" type="text" placeholder="State type chey mande" required>
+        <span id="state-error" class="error-message"></span>
+
+        <input id="postal" name="postal" type="text" placeholder="Postal Code adi" required>
+        <span id="postal-error" class="error-message"></span>
+
+        <button type="submit" class="btn">Next</button>
+        <a href="form1.html" class="btn">Back</a>
+
+    </form>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step 3 - Employee details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="progress">Step 3 of 4</div>
+        <h1>Employee Details</h1>
+        <form action="form4.html" name="RegForm" onsubmit="return validateForm()" onreset="resetErrors()" method="get">
+            <input id="employeeid" name="EmployeeId" type="text" placeholder="Employee ID" required>
+            <span id="employeeid-error" class="error-message"></span>
+            <input id="department" name="Department" type="text" placeholder="Department" required>
+            <span id="department-error" class="error-message"></span>
+
+            <select name="" id="role">
+                <option value="">Select Role</option>
+                <option value="Developer">Dingudu</option>
+                <option value="Developer">Shuttu</option>
+                <option value="Developer">Thengu</option>
+            </select>
+
+            <button type="submit" class="btn">Next</button>
+            <a href="form2.html" class="btn">Back</a>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Step 1 - Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+
+    <div class="progress">Step 1 of 4</div>
+
+    <h1>User Registration</h1>
+
+    <form action="form2.html" name="RegForm" onsubmit="return validateForm()" onreset="resetErrors" method="get">
+        
+        <input id="name" name="Name" type="text" placeholder="Type Your Full Name Shuttumani" required>
+        <span id="name-error" class="error-message"></span>
+
+        <input id="email" name="Email" type="email" placeholder="Email adikk mwole" required>
+        <span id="email-error" class="error-message"></span>
+
+        <select id="country-code">
+            <option value="+91">India (+91)</option>
+            <option value="+1">USA (+1)</option>
+            <option value="+44">UK (+44)</option>
+        </select>
+
+        <input id="phone" name="Phone" type="tel" placeholder="PH No.adik,pedikanda aarkum ariyila..!" required>
+        <span id="phone-error" class="error-message"></span>
+
+        <button type="submit" class="btn">Next</button>
+
+
+    </form>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
